@@ -1,7 +1,9 @@
 import React from 'react';
 
 function NavBar() {
-  return <div>NavBar</div>
+  return <div className='nav-bar'>
+    CSS FlexBox Rules
+  </div>
 }
 
 export default NavBar;
