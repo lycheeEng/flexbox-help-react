@@ -5,6 +5,8 @@ import Show from './components/Show';
 import Select from './components/Select';
 import Result from './components/Result';
 
+import './App.scss';
+
 class App extends Component {
   render() {
     return (
