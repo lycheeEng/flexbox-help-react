@@ -1,0 +1,12 @@
+.show-item {
+  display: flex;
+  // align-items: stretch;
+
+  &__item {
+    width: 100px;
+    // height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightgreen;
+  }
+}

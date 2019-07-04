@@ -6,12 +6,14 @@ import Select from './components/Select';
 import Result from './components/Result';
 
 class App extends Component {
-  render () {
+  render() {
     return (
-      <div>
+      <div className='app'>
         <NavBar />
-        <Show />
-        <Select />
+        <section>
+          <Show />
+          <Select />
+        </section>
         <Result />
       </div>
     );
