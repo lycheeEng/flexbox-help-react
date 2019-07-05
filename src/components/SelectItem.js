@@ -23,7 +23,7 @@ function SelectItem(props) {
                 key={property}
                 group={title}
                 property={property}
-                isDefault={property === defaultVal ? 'true' : ''}
+                defaultVal={defaultVal}
               />);
           })
         }

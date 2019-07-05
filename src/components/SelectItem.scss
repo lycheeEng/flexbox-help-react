@@ -1,2 +1,37 @@
 .select-item {
+  width: 90%;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  // background-size: auto 100%;
+
+  // &:hover {
+  //   box-shadow: 0 1px 5px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  //   background-size: auto 123%;
+  // }
+
+  .select-info {
+    padding-bottom: 0.5rem;
+  }
+
+  &--title {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    padding: 2px;
+    box-shadow: inset 0 -3px 0 rgba(144, 238, 144, 0.5);
+    background-size: 200% 200%;
+    transition: all ease-in-out 0.28s;
+    &:hover {
+      background-image: linear-gradient(to top, rgba(144, 238, 144, 0.5) 51%, transparent 50%);
+      background-position: 0 100%;
+      cursor: default;
+    }
+  }
+
+  &--description {
+    display: block;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+  }
 }

@@ -1,10 +1,21 @@
 import React from 'react';
 
 function SingleItem(props) {
+  const { group, property, defaultVal } = props;
+
   return (
     <div className='single-item'>
-      <input type='radio' name={props.group} id={`${props.group}_${props.property}`} value={props.property} />
-      <label htmlFor={`${props.group}_${props.property}`}>{props.isDefault ? `${props.property} (default)` : props.property}</label>
+      <input
+        type='radio'
+        name={group}
+        id={`${group}_${property}`}
+        value={property}
+      // checked={defaultVal === property}
+      />
+      <label
+        htmlFor={`${group}_${property}`}>
+        {defaultVal === property ? `${property} (default)` : property}
+      </label>
     </div>
   );
 }
