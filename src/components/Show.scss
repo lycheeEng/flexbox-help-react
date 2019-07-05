@@ -1,14 +1,13 @@
 .show {
-  width: 500px;
-  height: 500px;
+  min-width: 300px;
+  min-height: 300px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   margin-bottom: 2rem;
-  // margin: 2rem 1rem;
 
   display: flex;
-  // flex-direction: row-reverse;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: stretch;
-  // align-content: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
