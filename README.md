@@ -1,5 +1,9 @@
 ## About
 
+This project based on [this](http://flexbox.help/) site. The aim is to build a visualized flexbox demo and practice my react skills.
+
+## Challenges I faced when developing this project
+
 ## References
 
 - [TEST CSS FLEXBOX RULES](http://flexbox.help/)
