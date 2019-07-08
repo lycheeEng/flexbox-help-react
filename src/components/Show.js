@@ -8,7 +8,7 @@ class Show extends Component {
   // todos: changes for flex will be here
   state = {
     styles: {
-      flexWrap: 'wrap'
+      // flexWrap: 'wrap'
     }
   }
 
@@ -22,6 +22,7 @@ class Show extends Component {
         <ShowItem text='5' />
         <ShowItem text='6' />
         <ShowItem text='7' />
+        <ShowItem text='8' />
         {/* render specific number components */}
       </div>
     );
