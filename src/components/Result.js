@@ -14,7 +14,6 @@ function Result(props) {
   const { name, value } = props.change;
   defaultResult.forEach(res => res[0] === name ? res[1] = value : '');
 
-  console.log(defaultResult);
   return (
     <div className='result'>
       <pre>
