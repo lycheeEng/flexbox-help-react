@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './RangeBar.scss';
 
-function RangeBar(props) {
+class RangeBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 4
+    };
+  }
 
+  handleRangeValueChange = async e => {
+    await this.setState({ value: e.target.value });
+    await this.props.onRangeBarChange(this.state.value);
+  }
 
-  return (
-    <div className='range-bar'>
-      <input type='range' id='flexCount' name='flexCount' min='1' max='8' onChange={props.onRangeBarChange} />
-      <label htmlFor="flexCount"></label>
-    </div>
-  );
+  render() {
+    return (
+      <div className='range-bar' >
+        <input type='range' id='flexCount' name='flexCount' min='1' max='8' value={this.state.value} onChange={this.handleRangeValueChange} />
+        <label htmlFor="flexCount"></label>
+      </div>
+    );
+  }
+
 }
 
 export default RangeBar;

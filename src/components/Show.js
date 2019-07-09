@@ -31,7 +31,6 @@ class Show extends Component {
         {
           this.generateShowItem()
         }
-        {/* render specific number components */}
       </div>
     );
   }

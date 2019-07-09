@@ -10,11 +10,11 @@ import './App.scss';
 
 class App extends Component {
   state = {
-    range: 5
+    range: 4
   }
 
-  handleRangeBarChange = e => {
-    this.setState({ range: e.target.value })
+  handleRangeBarChange = range => {
+    this.setState({ range });
   }
 
   render() {
