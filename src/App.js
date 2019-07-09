@@ -14,7 +14,7 @@ class App extends Component {
     styles: {
       'flexDirection': 'row',
       'flexWrap': 'nowrap',
-      'justifyContent': 'flex-end',
+      'justifyContent': 'flex-start',
       'alignItems': 'stretch',
       'alignContent': 'stretch'
     },
