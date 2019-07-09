@@ -2,6 +2,13 @@
 
 This project based on [this](http://flexbox.help/) site. The aim is to build a visualized flexbox demo and practice my react skills.
 
+## How to play?
+
+- First use `git clone https://github.com/lycheeEng/flexbox-help-react && cd flexbox-help-react` to clone the code to your machine
+- then use `npm install` to install all dependencises we need
+- then use `yarn start` to start a development server
+- if you want to build and server in remote server, use 'yarn build' to build the production code
+
 ## Challenges I faced when developing this project
 
 - When I drag range indicator, I wont't see the changes in the Show compoentn, why?
