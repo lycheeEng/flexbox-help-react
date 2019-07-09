@@ -6,23 +6,31 @@ import './Show.scss';
 
 class Show extends Component {
   // todos: changes for flex will be here
-  state = {
-    styles: {
-      // flexWrap: 'wrap'
+  constructor(props) {
+    super(props);
+    this.state = {
+      styles: {
+        // flexWrap: 'wrap'
+      }
     }
+  }
+
+  generateShowItem = () => {
+    let items = [];
+    for (let i = 1; i <= this.props.range; i++) {
+      const item = <ShowItem text={i} key={i} />;
+      items.push(item);
+    };
+    console.log(items);
+    return items;
   }
 
   render() {
     return (
       <div className='show' style={this.state.styles}>
-        <ShowItem text='1' />
-        <ShowItem text='2' />
-        <ShowItem text='3' />
-        <ShowItem text='4' />
-        <ShowItem text='5' />
-        <ShowItem text='6' />
-        <ShowItem text='7' />
-        <ShowItem text='8' />
+        {
+          this.generateShowItem()
+        }
         {/* render specific number components */}
       </div>
     );

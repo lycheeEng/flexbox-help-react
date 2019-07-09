@@ -9,13 +9,21 @@ import Result from './components/Result';
 import './App.scss';
 
 class App extends Component {
+  state = {
+    range: 5
+  }
+
+  handleRangeBarChange = e => {
+    this.setState({ range: e.target.value })
+  }
+
   render() {
     return (
       <div className='app'>
         <NavBar />
-        <RangeBar />
+        <RangeBar onRangeBarChange={this.handleRangeBarChange} />
         <section>
-          <Show />
+          <Show range={this.state.range} />
           <Select />
         </section>
         <Result />
