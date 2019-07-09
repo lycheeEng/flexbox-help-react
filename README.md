@@ -4,6 +4,15 @@ This project based on [this](http://flexbox.help/) site. The aim is to build a v
 
 ## Challenges I faced when developing this project
 
+- When I drag range indicator, I wont't see the changes in the Show compoentn, why?
+
+  - Reasons: Beacuse React `setState` function is async, I setState then I pass the state date to another component, but in this time I may not get the current value. So I can't see the changes.
+  - Solved: use async and await. This problem is easy to solve, but it's hard to find the problem is. you always tell yourself the problem can not be here.
+
+## Something can do better
+
+- write less hard code
+
 ## References
 
 - [TEST CSS FLEXBOX RULES](http://flexbox.help/)
