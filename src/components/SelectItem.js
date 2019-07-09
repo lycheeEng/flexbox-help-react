@@ -7,7 +7,7 @@ import './SingleItem.scss';
 import './SelectItem.scss';
 
 function SelectItem(props) {
-  const { title, description, group, defaultVal, onRadioChange } = props;
+  const { title, description, values, defaultVal, onRadioChange } = props;
   return (
     <div className='select-item'>
       <div className="select-info">
@@ -16,11 +16,11 @@ function SelectItem(props) {
       </div>
       <div className="select-group">
         {
-          group.map(property => {
+          values.map(property => {
             return (
               <SingleItem
                 key={property}
-                group={title}
+                title={title}
                 property={property}
                 defaultVal={defaultVal}
                 onRadioChange={onRadioChange}

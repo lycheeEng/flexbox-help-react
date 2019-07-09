@@ -1,20 +1,20 @@
 import React from 'react';
 
 function SingleItem(props) {
-  const { group, property, defaultVal } = props;
-
+  const { title, property, defaultVal, onRadioChange } = props;
   return (
     <div className='single-item'>
+      {/* todos: ref */}
       <input
         type='radio'
-        name={group}
-        id={`${group}_${property}`}
+        name={title}
+        id={`${title}_${property}`}
         value={property}
-        onChange={props.onRadioChange}
-      // checked={defaultVal === property}
+        onChange={onRadioChange}
+      // checked={this.state.property === defaultVal}
       />
       <label
-        htmlFor={`${group}_${property}`}>
+        htmlFor={`${title}_${property}`}>
         {defaultVal === property ? `${property} (default)` : property}
       </label>
     </div>
