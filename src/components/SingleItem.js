@@ -10,6 +10,7 @@ function SingleItem(props) {
         name={group}
         id={`${group}_${property}`}
         value={property}
+        onChange={props.onRadioChange}
       // checked={defaultVal === property}
       />
       <label

@@ -7,8 +7,7 @@ import './SingleItem.scss';
 import './SelectItem.scss';
 
 function SelectItem(props) {
-  console.log(props);
-  const { title, description, group, defaultVal } = props;
+  const { title, description, group, defaultVal, onRadioChange } = props;
   return (
     <div className='select-item'>
       <div className="select-info">
@@ -24,6 +23,7 @@ function SelectItem(props) {
                 group={title}
                 property={property}
                 defaultVal={defaultVal}
+                onRadioChange={onRadioChange}
               />);
           })
         }

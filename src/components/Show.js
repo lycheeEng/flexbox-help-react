@@ -10,7 +10,11 @@ class Show extends Component {
     super(props);
     this.state = {
       styles: {
-        // flexWrap: 'wrap'
+        'flexDirection': 'row',
+        'flexWrap': 'nowrap',
+        'justifyContent': 'flex-end',
+        'alignItems': 'stretch',
+        'alignContent': 'stretch'
       }
     }
   }
@@ -21,7 +25,6 @@ class Show extends Component {
       const item = <ShowItem text={i} key={i} />;
       items.push(item);
     };
-    console.log(items);
     return items;
   }
 
