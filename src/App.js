@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import NavBar from './components/NavBar';
+import RangeBar from './components/RangeBar';
 import Show from './components/Show';
 import Select from './components/Select';
 import Result from './components/Result';
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className='app'>
         <NavBar />
+        <RangeBar />
         <section>
           <Show />
           <Select />
